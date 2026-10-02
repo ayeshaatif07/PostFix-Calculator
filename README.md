@@ -70,3 +70,8 @@ Reinstalling the Command Line Tools (`xcode-select --install`) also fixes it per
 
 - Separate every token with exactly one space, for example `5 3 +`.
 - Enter `q` to quit.
+
+## Author and Credits
+
+- **Author:** Ayesha Atif
+- **Coursework:** Algorithms and Data Structures 2 (ADS 2) – Semester 3 Midterm
