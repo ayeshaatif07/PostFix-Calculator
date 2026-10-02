@@ -56,7 +56,15 @@ g++ -std=c++17 -o postfix src.cpp
 ./postfix
 ```
 
-On macOS, if the build fails with `'iostream' file not found`, add `-I/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1` to the `g++` command.
+### macOS: `'iostream' file not found`
+
+If the build fails with this error, the Command Line Tools cannot find the C++ headers. Point the compiler at them with `-I`:
+
+```bash
+g++ -std=c++17 -I/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1 -o postfix src.cpp && ./postfix
+```
+
+Reinstalling the Command Line Tools (`xcode-select --install`) also fixes it permanently.
 
 ## Usage Notes
 
